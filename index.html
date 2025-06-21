@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Water</title>
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Title of the project" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/PaulleDemon" />
+    <!--Replace with the current website url-->
+    <meta property="og:image" content="" />
+
+    <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css"> -->
+    <link rel="stylesheet" href="./css/tailwind-build.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-[#fff]">
+    <header class="tw-absolute tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-bg-opacity-0 tw-px-[5%] max-lg:tw-mr-auto max-lg:tw-px-4 lg:tw-justify-around">
+      <a class="tw-h-[50px] tw-w-[50px] tw-p-[4px]" href="">
+        <img src="./assets/logo.png" alt="logo" class="tw-object tw-h-full tw-w-full" />
+      </a>
+      <div class="collapsible-header animated-collapse max-lg:tw-shadow-md" id="collapsed-header-items">
+        <div class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base tw-text-black max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center">
+          <a class="header-links" href="index.html"> Beranda </a>
+          <a class="header-links" href="tentang.html"> Tentang Kami </a>
+          <a class="header-links" href="#kelebihan"> Kelebihan </a>
+          <a class="header-links" href="#harga"> Harga </a>
+          <a class="header-links" href="#courses"> Alamat </a>
+        </div>
+        <div class="tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center">
+          <a href="https://wa.link/7g7czz" aria-label="signup" class="tw-rounded-md tw-bg-primary tw-px-3 tw-py-2 tw-text-white tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2">
+            <span>Pesan Sekarang!</span>
+            <i class="bi bi-droplet"></i>
+          </a>
+        </div>
+      </div>
+      <button class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-black lg:tw-hidden" onclick="toggleHeader()" aria-label="menu" id="collapse-btn"></button>
+    </header>
+
+    <section class="tw-relative tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-lg:tw-p-4 max-md:tw-mt-[50px]">
+      <div class="tw-flex tw-h-full tw-min-h-[100vh] tw-w-full tw-place-content-center tw-gap-6 tw-p-[5%] max-xl:tw-place-items-center max-lg:tw-flex-col">
+        <div class="tw-flex tw-flex-col tw-place-content-center">
+          <div class="tw-text-6xl tw-font-semibold tw-uppercase tw-leading-[80px] max-lg:tw-text-4xl max-md:tw-leading-snug">
+            <span> Depot Air Minum </span>
+            <br />
+            <span class="tw-text-primary"> EL WATER </span>
+          </div>
+          <div class="tw-mt-10 tw-max-w-[450px] tw-p-2 tw-text-justify max-lg:tw-max-w-full">Depot air minum EL WATER menyediakan air isi ulang murni berkualitas tinggi dengan sistem RO dan proses higienis terpercaya..</div>
+
+          <div class="tw-mt-4 tw-flex tw-place-items-center tw-gap-4 tw-overflow-hidden tw-p-2">
+            <a class="btn tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]" href="https://wa.link/7g7czz"> Pesan Sekarang </a>
+            <a class="btn !tw-bg-[#c8cbf984] !tw-text-primary tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]" href="tentang.html">
+              <span>Tentang Kami</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="tw-flex tw-w-full tw-max-w-[50%] tw-place-content-center tw-place-items-center tw-overflow-hidden max-lg:tw-max-w-[unset]">
+          <div class="tw-flex tw-max-h-[580px] tw-min-h-[450px] tw-min-w-[350px] tw-max-w-[650px] tw-overflow-hidden max-lg:tw-h-fit max-lg:tw-max-h-[320px] max-lg:tw-min-h-[180px] max-lg:tw-w-[320px] max-lg:tw-min-w-[320px]">
+            <img src="./assets/images/home/iphone.png" alt="app" class="tw-h-full tw-w-full tw-object-contain" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6" id="numbers">
+      <div class="tw-flex tw-flex-col tw-place-items-center tw-gap-8">
+        <h3 class="tw-text-3xl">Telah Melayani</h3>
+        <div class="tw-flex tw-w-full tw-place-content-center tw-gap-10 max-md:tw-flex-col" id="numbers-container">
+          <div>
+            <span class="tw-text-6xl max-lg:tw-text-4xl"> <span id="installs-count">100</span><span> Ribu +</span> </span>
+            <span class="tw-text-xl tw-font-medium tw-text-gray-800"> /Pelanggan </span>
+          </div>
+          <div class="tw-text-6xl">
+            <span class="tw-text-6xl max-lg:tw-text-4xl"> <span id="gallons-count">200</span><span> Ribu +</span> </span>
+            <span class="tw-text-xl tw-font-medium tw-text-gray-800"> /Galon </span>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+
+      <div class="tw-flex tw-flex-col tw-place-items-center tw-gap-8">
+        <h3 class="tw-text-3xl">Sudah Beroperasi Selama</h3>
+        <div class="tw-flex tw-w-full tw-place-content-center tw-gap-10 max-md:tw-flex-col">
+          <div>
+            <span class="tw-text-6xl max-lg:tw-text-4xl">
+              <span>7</span>
+            </span>
+            <span class="tw-text-xl tw-font-medium tw-text-gray-800"> Tahun </span>
+          </div>
+          <div class="tw-text-6xl">
+            <span class="tw-text-6xl max-lg:tw-text-4xl">
+              <span>5</span>
+            </span>
+            <span class="tw-text-xl tw-font-medium tw-text-gray-800"> Bulan</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6" id="kelebihan">
+      <div class="tw-mt-8 tw-flex tw-flex-col tw-place-items-center tw-gap-5">
+        <div class="tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center">
+          <h3 class="tw-text-xl tw-text-primary">Mengapa Pilih El Water?</h3>
+          <h2 class="tw-text-4xl tw-font-semibold">Depot Air Minum El Water Memiliki</h2>
+        </div>
+        <div class="tw-mt-6 tw-flex tw-max-w-[60%] tw-flex-wrap tw-place-content-center tw-gap-2 max-lg:tw-flex-col">
+          <div class="tw-flex tw-h-[250px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4 tw-text-center">
+            <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+            <i class="bi bi-droplet tw-text-5xl tw-text-primary"></i>
+            <h3 class="tw-text-2xl tw-font-semibold">Air Murni</h3>
+            <div class="tw-text-[#595959]">EL WATER menghasilkan air yang benar-benar murni, jernih, dan bebas bau maupun rasa, aman dikonsumsi setiap hari.</div>
+          </div>
+          <div class="tw-flex tw-h-[250px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4 tw-text-center">
+            <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+            <i class="bi bi-sliders tw-text-5xl tw-text-primary"></i>
+            <h3 class="tw-text-2xl tw-font-semibold">Bebas Logam Berat</h3>
+            <div class="tw-text-[#595959]">Melalui sistem penyaringan berlapis, logam berat seperti timbal dan merkuri berhasil dihilangkan untuk menjaga kesehatan konsumen.</div>
+          </div>
+          <div class="tw-flex tw-h-[250px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4 tw-text-center">
+            <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+            <i class="bi bi-arrow-repeat tw-text-5xl tw-text-primary"></i>
+            <h3 class="tw-text-2xl tw-font-semibold">Sistem RO (Reverse Osmosis)</h3>
+            <div class="tw-text-[#595959]">Teknologi Reverse Osmosis menyaring hingga tingkat mikron, menjamin air lebih bersih dan lebih aman dibanding metode biasa.</div>
+          </div>
+          <div class="tw-flex tw-h-[250px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4 tw-text-center">
+            <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+            <i class="bi bi-shield-check tw-text-5xl tw-text-primary"></i>
+            <h3 class="tw-text-2xl tw-font-semibold">Terdaftar di BPOM & Dinas Kesehatan</h3>
+            <div class="tw-text-[#595959]">EL WATER telah mengantongi izin resmi dari BPOM dan Dinas Kesehatan sebagai bukti standar mutu dan keamanan yang diakui.</div>
+          </div>
+          <div class="tw-flex tw-h-[250px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4 tw-text-center">
+            <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+            <i class="bi bi-patch-check tw-text-5xl tw-text-primary"></i>
+            <h3 class="tw-text-2xl tw-font-semibold">Halal</h3>
+            <div class="tw-text-[#595959]">Proses produksi EL WATER memenuhi standar halal, memastikan air suci dan layak dikonsumsi oleh seluruh kalangan masyarakat Muslim.</div>
+          </div>
+          <div class="tw-flex tw-h-[250px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4 tw-text-center">
+            <!-- <img src="./assets/images/home/sample.jpg" 
+                            alt="feature1"> -->
+            <i class="bi bi-shield-lock tw-text-5xl tw-text-primary"></i>
+            <h3 class="tw-text-2xl tw-font-semibold">Terjamin Higienis</h3>
+            <div class="tw-text-[#595959]">Dengan sistem pengisian tertutup dan alat sterilisasi, kebersihan air selalu terjaga dari depot hingga ke tangan pelanggan.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tw-mt-5 tw-flex tw-w-full tw-flex-col tw-place-items-center tw-p-[2%]" id="testimoni">
+      <h3 class="tw-text-3xl tw-font-medium tw-text-primary max-md:tw-text-2xl">Testimoni pelanggan</h3>
+      <!-- Testimonials -->
+      <div class="tw-mt-8 tw-gap-10 tw-space-y-8 max-md:tw-columns-1 lg:tw-columns-2 xl:tw-columns-3">
+        <div class="tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 tw-shadow-lg max-lg:tw-w-[320px]">
+          <div class="tw-flex tw-place-items-center tw-gap-3">
+            <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary">
+              <img src="./assets/images/people/1.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="man" />
+            </div>
+            <div class="tw-flex tw-flex-col tw-gap-1">
+              <div class="tw-font-semibold">Faturrahman Djilatim</div>
+            </div>
+          </div>
+          <p class="tw-mt-4 tw-italic tw-text-gray-600">"Saya sudah mencoba beberapa depot air isi ulang, tapi EL WATER paling beda. Airnya benar-benar jernih dan segar. Saya tidak ragu memberikannya untuk anak-anak saya."</p>
+        </div>
+        <div class="tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 tw-shadow-lg max-lg:tw-w-[320px]">
+          <div class="tw-flex tw-place-items-center tw-gap-3">
+            <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary">
+              <img src="./assets/images/people/2.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="man" />
+            </div>
+            <div class="tw-flex tw-flex-col tw-gap-1">
+              <div class="tw-font-semibold">Reza Maulana</div>
+            </div>
+          </div>
+          <p class="tw-mt-4 tw-italic tw-text-gray-600">"Saya suka sekali pelayanan dari EL WATER. Mereka cepat merespons dan selalu ramah saat antar galon. Sangat memudahkan kami di rumah."</p>
+        </div>
+        <div class="tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 tw-shadow-lg max-lg:tw-w-[320px]">
+          <div class="tw-flex tw-place-items-center tw-gap-3">
+            <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary">
+              <img src="./assets/images/people/3.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="man" />
+            </div>
+            <div class="tw-flex tw-flex-col tw-gap-1">
+              <div class="tw-font-semibold">Jeriko</div>
+            </div>
+          </div>
+          <p class="tw-mt-4 tw-italic tw-text-gray-600">"Saya cukup sensitif terhadap air minum, tapi sejak pakai EL WATER tidak pernah ada masalah. Terasa ringan di tubuh dan cocok untuk sekeluarga."</p>
+        </div>
+        <div class="tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 tw-shadow-lg max-lg:tw-w-[320px]">
+          <div class="tw-flex tw-place-items-center tw-gap-3">
+            <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary">
+              <img src="./assets/images/people/4.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="man" />
+            </div>
+            <div class="tw-flex tw-flex-col tw-gap-1">
+              <div class="tw-font-semibold">Randi Amin</div>
+            </div>
+          </div>
+          <p class="tw-mt-4 tw-italic tw-text-gray-600">"Setelah tahu EL WATER pakai teknologi Reverse Osmosis, saya makin yakin. Rasanya lebih murni dibanding air biasa. Top!"</p>
+        </div>
+        <div class="tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 tw-shadow-lg max-lg:tw-w-[320px]">
+          <div class="tw-flex tw-place-items-center tw-gap-3">
+            <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary">
+              <img src="./assets/images/people/5.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="man" />
+            </div>
+            <div class="tw-flex tw-flex-col tw-gap-1">
+              <div class="tw-font-semibold">Aditz Lamidjang</div>
+            </div>
+          </div>
+          <p class="tw-mt-4 tw-italic tw-text-gray-600">"Saya pilih EL WATER karena mereka sudah terdaftar di BPOM dan Dinas Kesehatan. Saya lebih tenang karena kualitasnya jelas terjamin."</p>
+        </div>
+        <div class="tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 tw-shadow-lg max-lg:tw-w-[320px]">
+          <div class="tw-flex tw-place-items-center tw-gap-3">
+            <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary">
+              <img src="./assets/images/people/6.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="man" />
+            </div>
+            <div class="tw-flex tw-flex-col tw-gap-1">
+              <div class="tw-font-semibold">Renaldhy</div>
+            </div>
+          </div>
+          <p class="tw-mt-4 tw-italic tw-text-gray-600">"Keluarga saya sudah jadi pelanggan EL WATER selama lebih dari 3 tahun. Tidak pernah kecewa. Harganya juga masuk akal."</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tw-mt-5 tw-flex tw-w-full tw-flex-col tw-place-items-center tw-p-[2%]" id="harga">
+      <h3 class="tw-text-3xl tw-font-medium tw-text-primary max-md:tw-text-2xl">Harga Terjangkau</h3>
+      <!-- pricing -->
+      <div class="tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col">
+        <div class="tw-flex tw-w-[380px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]">
+          <h3 class="">
+            <span class="tw-text-5xl tw-font-semibold">Rp. 5.000</span>
+            <span class="tw-text-2xl tw-text-gray-600">/Galon</span>
+          </h3>
+          <p class="tw-mt-3 tw-text-center tw-text-gray-600">Air galon diantar langsung ke rumah, praktis, cepat, bersih, dan higienis untuk keluarga Anda.</p>
+          <hr />
+          <a href="http://" class="btn tw-mt-8 !tw-w-full tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02]"> Pesan Sekarang! </a>
+        </div>
+        <div class="tw-flex tw-w-[380px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]">
+          <h3 class="">
+            <span class="tw-text-5xl tw-font-semibold">Rp. 4.000</span>
+            <span class="tw-text-2xl tw-text-gray-600">/Galon</span>
+          </h3>
+          <p class="tw-mt-3 tw-text-center tw-text-gray-600">Datang langsung ke depot EL WATER, isi sendiri galon Anda, hemat, cepat, dan berkualitas.</p>
+          <hr />
+
+          <a href="http://" class="btn tw-mt-8 !tw-w-full tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02]"> Datang Ketempat! </a>
+        </div>
+      </div>
+    </section>
+    <section id="courses" data-link="courses-link" class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-p-6 tw-text-center tw-bg-white tw-gap-4">
+      <span class="special"></span>
+
+      <h1 class="tw-text-2xl md:tw-text-4xl tw-font-bold tw-text-gray-800">Alamat Depot Air Minum El Water</h1>
+
+      <div class="tw-w-full tw-flex tw-justify-center">
+        <iframe
+          class="tw-w-full md:tw-w-[600px] tw-h-[300px] md:tw-h-[450px] tw-rounded-lg tw-shadow-lg"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.3173954915702!2d122.72012156749182!3d-1.1035231170232622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d84198f3f091db9%3A0x9f85f117a24f6d20!2sFayhu%20cake%26cookies%20luwuk%20banggai!5e0!3m2!1sid!2sid!4v1750496462404!5m2!1sid!2sid"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <h1 class="tw-text-lg md:tw-text-xl tw-font-medium tw-text-gray-700">Samping Mesjid Al-Muqaramah Desa Padungnyo Kecamatan Nambo</h1>
+    </section>
+
+    <section class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-p-[5%] tw-px-[10%]">
+      <div class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-3">
+        <h2 class="tw-text-2xl tw-text-primary max-md:tw-text-xl">Hubungi Kami!</h2>
+        <h2 class="tw-text-xl max-md:tw-text-lg">Jika ada Kendala!</h2>
+
+        <div class="tw-flex tw-h-[60px] tw-place-items-center tw-gap-2 tw-overflow-hidden tw-p-2">
+          <a class="btn tw-transition-colors tw-duration-[0.3s]" href="https://wa.link/1hhkcv"> Hubungi </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="tw-mt-auto tw-flex tw-w-full tw-place-content-around tw-gap-3 tw-p-[5%] tw-px-[10%] tw-text-black max-md:tw-flex-col">
+      <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-w-full">
+        <img src="./assets/logo.png" alt="logo" srcset="" class="tw-max-w-[120px]" />
+        <div>
+          Desa Padungnyo,
+          <br />
+          Kecamatan Nambo,
+          <br />
+          Kabupaten Banggai.
+        </div>
+        <div class="tw-mt-3 tw-text-lg tw-font-semibold">Follow us</div>
+        <div class="tw-flex tw-gap-4 tw-text-2xl">
+          <a href="https://www.facebook.com/elDAMIU" aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="mailto:fajriantodjilatim@gmail.com" aria-label="email">
+            <i class="bi bi-envelope"></i>
+          </a>
+          <a href="https://wa.link/7g7czz" class="tw-h-[40px] tw-w-[40px]" aria-label="whatsapp">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
+        <h2 class="tw-text-3xl max-md:tw-text-xl">Link</h2>
+        <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+          <a href="tentang.html" class="footer-link">Tentang Kami</a>
+          <a href="#kelebihan" class="footer-link">Kelebihan</a>
+          <a href="#testimoni" class="footer-link">Testimoni</a>
+          <a href="#harga" class="footer-link">Harga</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"
+    integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"
+    integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script src="./index.js"></script>
+</html>
